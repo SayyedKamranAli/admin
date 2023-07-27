@@ -1,0 +1,7 @@
+.toastMessage {
+    background: rgb(107, 159, 141);
+    color: #ffffff;
+    font-size: 15px;
+    width: 24vw;
+    padding: 15px 20px;
+}
