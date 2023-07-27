@@ -211,7 +211,6 @@ const Team = () => {
         }}
 
        >
-   {/* <SearchBar/> */}
         <DataGrid rows={rows} columns={columns} components={{ Toolbar: GridToolbar }}/>
       </Box>
      
