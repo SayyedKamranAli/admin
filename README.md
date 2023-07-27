@@ -1,4 +1,4 @@
-# React Admin Dashboard
+# Admin Dashboard
 
-Build a COMPLETE React Admin Dashboard | React, Material UI, Data Grid, Light & Dark Mode
+Build a COMPLETE Admin Dashboard | React, Material UI, Data Grid, Light & Dark Mode
 
