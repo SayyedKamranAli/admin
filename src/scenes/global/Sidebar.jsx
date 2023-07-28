@@ -42,6 +42,7 @@ const Sidebar = () => {
   const [token, setToken] = useState("");
   const [userId, setUserId] = useState("");
 
+<<<<<<< HEAD
 
 
 
@@ -73,6 +74,36 @@ const Sidebar = () => {
         }
       }
     }
+=======
+  useEffect(() => {
+    setToken(localStorage.getItem("usersdata"));
+    setUserId(localStorage.getItem("usersId"));
+    if(userId !== ""){
+    try {
+      const data = axios({
+        method: "GET",
+        url: `${AppConstants.apibaseURL}/validuser/${userId}`,
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: token,
+        },
+      });
+      data.then(function (result) {
+        if (result.status === 201) {
+          setUserData(result?.data?.ValidUserOne);
+        }
+      });
+    } catch (error) {
+      if (error.response && error.response.status === 404) {
+        // Handle 404 error
+        console.log('Resource not found.');
+      } else {
+        // Handle other errors
+        console.log('An error occurred:', error.message);
+      }
+    }
+  }
+>>>>>>> 6b2f24819b3e72ab1e9794ed5305bf1385bd4d64
   }, [token]);
   return (
     <Box
@@ -178,7 +209,11 @@ const Sidebar = () => {
                 to="/category"
                 selected={selected}
                 setSelected={setSelected}
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 6b2f24819b3e72ab1e9794ed5305bf1385bd4d64
               />
               <Item
                 title="Sub-Category"
@@ -202,6 +237,7 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
+<<<<<<< HEAD
 
 
             <SubMenu style={{ position: "relative", bottom: "28px", }} label="Charts">
@@ -210,6 +246,9 @@ const Sidebar = () => {
             </SubMenu>
 
 
+=======
+           
+>>>>>>> 6b2f24819b3e72ab1e9794ed5305bf1385bd4d64
           </Box>
         </Menu>
       </ProSidebar>

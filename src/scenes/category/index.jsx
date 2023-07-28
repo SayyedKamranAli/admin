@@ -8,7 +8,10 @@ import {
 } from "@mui/material";
 import { DataGrid, GridToolbarExport } from "@mui/x-data-grid";
 import { tokens } from "../../theme";
+<<<<<<< HEAD
 import { mockDataTeam } from "../../data/mockData";
+=======
+>>>>>>> 6b2f24819b3e72ab1e9794ed5305bf1385bd4d64
 import AdminPanelSettingsOutlinedIcon from "@mui/icons-material/AdminPanelSettingsOutlined";
 import LockOpenOutlinedIcon from "@mui/icons-material/LockOpenOutlined";
 import SecurityOutlinedIcon from "@mui/icons-material/SecurityOutlined";
@@ -211,7 +214,10 @@ const Team = () => {
         }}
 
        >
+<<<<<<< HEAD
    {/* <SearchBar/> */}
+=======
+>>>>>>> 6b2f24819b3e72ab1e9794ed5305bf1385bd4d64
         <DataGrid rows={rows} columns={columns} components={{ Toolbar: GridToolbar }}/>
       </Box>
      
